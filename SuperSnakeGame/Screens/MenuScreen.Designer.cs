@@ -28,59 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.playButton = new System.Windows.Forms.Button();
-            this.exitButton = new System.Windows.Forms.Button();
+            this.titleLabel = new System.Windows.Forms.Label();
+            this.startLabel = new System.Windows.Forms.Label();
+            this.exitLabel = new System.Windows.Forms.Label();
+            this.optionLabel = new System.Windows.Forms.Label();
+            this.highScoreLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // playButton
+            // titleLabel
             // 
-            this.playButton.BackColor = System.Drawing.Color.White;
-            this.playButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.playButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.playButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.playButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.playButton.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playButton.Location = new System.Drawing.Point(310, 297);
-            this.playButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(272, 120);
-            this.playButton.TabIndex = 0;
-            this.playButton.Text = "Play";
-            this.playButton.UseVisualStyleBackColor = false;
-            this.playButton.Click += new System.EventHandler(this.playButton_Click);
+            this.titleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.titleLabel.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.titleLabel.ForeColor = System.Drawing.Color.Firebrick;
+            this.titleLabel.Location = new System.Drawing.Point(139, 54);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(522, 67);
+            this.titleLabel.TabIndex = 0;
+            this.titleLabel.Text = "BRICK BREAKER";
             // 
-            // exitButton
+            // startLabel
             // 
-            this.exitButton.BackColor = System.Drawing.Color.White;
-            this.exitButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(310, 429);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(272, 120);
-            this.exitButton.TabIndex = 1;
-            this.exitButton.Text = "Exit";
-            this.exitButton.UseVisualStyleBackColor = false;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            this.startLabel.BackColor = System.Drawing.Color.Transparent;
+            this.startLabel.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.startLabel.ForeColor = System.Drawing.Color.Red;
+            this.startLabel.Location = new System.Drawing.Point(269, 193);
+            this.startLabel.Name = "startLabel";
+            this.startLabel.Size = new System.Drawing.Size(262, 57);
+            this.startLabel.TabIndex = 1;
+            this.startLabel.Text = "START";
+            this.startLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // exitLabel
+            // 
+            this.exitLabel.BackColor = System.Drawing.Color.Transparent;
+            this.exitLabel.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitLabel.ForeColor = System.Drawing.Color.White;
+            this.exitLabel.Location = new System.Drawing.Point(269, 428);
+            this.exitLabel.Name = "exitLabel";
+            this.exitLabel.Size = new System.Drawing.Size(262, 57);
+            this.exitLabel.TabIndex = 2;
+            this.exitLabel.Text = "EXIT";
+            this.exitLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // optionLabel
+            // 
+            this.optionLabel.BackColor = System.Drawing.Color.Transparent;
+            this.optionLabel.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.optionLabel.ForeColor = System.Drawing.Color.White;
+            this.optionLabel.Location = new System.Drawing.Point(269, 347);
+            this.optionLabel.Name = "optionLabel";
+            this.optionLabel.Size = new System.Drawing.Size(262, 57);
+            this.optionLabel.TabIndex = 3;
+            this.optionLabel.Text = "OPTIONS";
+            this.optionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // highScoreLabel
+            // 
+            this.highScoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.highScoreLabel.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.highScoreLabel.ForeColor = System.Drawing.Color.White;
+            this.highScoreLabel.Location = new System.Drawing.Point(269, 269);
+            this.highScoreLabel.Name = "highScoreLabel";
+            this.highScoreLabel.Size = new System.Drawing.Size(262, 57);
+            this.highScoreLabel.TabIndex = 4;
+            this.highScoreLabel.Text = "HIGHSCORES";
+            this.highScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MenuScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.playButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BackgroundImage = global::SuperSnakeGame.Properties.Resources.fadeBackground;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.highScoreLabel);
+            this.Controls.Add(this.optionLabel);
+            this.Controls.Add(this.exitLabel);
+            this.Controls.Add(this.startLabel);
+            this.Controls.Add(this.titleLabel);
             this.Name = "MenuScreen";
-            this.Size = new System.Drawing.Size(1200, 846);
+            this.Size = new System.Drawing.Size(800, 550);
+            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.MenuScreen_PreviewKeyDown);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button playButton;
-        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.Label startLabel;
+        private System.Windows.Forms.Label exitLabel;
+        private System.Windows.Forms.Label optionLabel;
+        private System.Windows.Forms.Label highScoreLabel;
     }
 }

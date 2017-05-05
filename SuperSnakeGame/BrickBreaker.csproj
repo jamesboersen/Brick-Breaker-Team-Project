@@ -71,6 +71,18 @@
     <Compile Include="Paddle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\HighscoreScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\HighscoreScreen.Designer.cs">
+      <DependentUpon>HighscoreScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\InstructionScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\InstructionScreen.Designer.cs">
+      <DependentUpon>InstructionScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\MenuScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -96,6 +108,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Screens\HighscoreScreen.resx">
+      <DependentUpon>HighscoreScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\InstructionScreen.resx">
+      <DependentUpon>InstructionScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\MenuScreen.resx">
       <DependentUpon>MenuScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,7 +146,25 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\blue_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fadedBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_250x250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_250x250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_250x250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joystick part 2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
